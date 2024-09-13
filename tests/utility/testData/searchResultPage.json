@@ -1,0 +1,33 @@
+{
+
+    "TC2": [
+
+        {
+            "type":"Title",
+            "input1":"SDET"
+        },
+
+        {
+            "type":"Location",
+            "input1":"VANCOUVER"
+        }
+
+
+    ],
+
+
+    "TC3": [
+
+        {
+            "type":"Title",
+            "category":"Technology | Analytics | Research",
+            "city":"CALGARY"
+        }
+
+       
+
+
+    ]
+
+
+}

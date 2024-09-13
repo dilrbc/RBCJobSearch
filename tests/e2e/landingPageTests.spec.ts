@@ -59,9 +59,7 @@ test.describe('RBC jobs landing page Functionality', () => {
 
     })
 
-
-
-
+  
 
     
 })
