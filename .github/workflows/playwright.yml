@@ -2,9 +2,9 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
 
 jobs:
   test:
@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
-        node-version: lts/*
+        node-version: 'lts/*'
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
@@ -33,7 +33,7 @@ jobs:
         git commit -m "Deploy Playwright Test Report to GitHub Pages"
         git push
     - name: Output Playwright Report URL
-      run: echo "View Playwright Report at: https://$GITHUB_REPOSITORY.github.io/docs/playwright-report/"
+      run: echo "View Playwright Report at: https://${{ github.repository }}.github.io/docs/playwright-report/"
     - uses: actions/upload-artifact@v4
       if: always()
       with:
