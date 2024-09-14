@@ -12,7 +12,7 @@ export default class WebActions {
 
     async waitForPageFullyLoaded(){
         await this.page.waitForTimeout(3000)
-        await this.page.evaluate(() => document.fonts.ready);
+        //await this.page.evaluate(() => document.fonts.ready);
         await this.page.waitForLoadState('domcontentloaded')
         //await this.page.waitForEvent('requestfinished')
         //await this.page.waitForEvent('response')
